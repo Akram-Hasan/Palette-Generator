@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('/assets/bgimage2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #374151, #1f2937); /* Gray-700 to Gray-900 */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+.header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.colors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.color.copied {
+  border: 2px solid transparent;
+}
+
+
+
+
+.lock-toggle {
+  background-color: transparent;
+  border: none; /* Optional: Removes any border */
+  cursor: pointer; /* Optional: Changes cursor to pointer for buttons */
+}
+
+.color-input {
+  background-color: transparent;
+}
+
+.copy-hex {
+  background-color: transparent;
+  border: none; /* Optional: Removes any border */
+  cursor: pointer; /* Optional: Changes cursor to pointer for buttons */
+}
+
+
+
+
+
+.color-input {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.lock-toggle,
+.copy-hex {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.lock-toggle {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.lock-toggle.is-Locked {
+  opacity: 1;
+}
+
+.generatorBtn {
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 1rem 0;
+  transition: background-color 0.3s ease;
+}
+
+.generatorBtn:hover {
+  background-color: #3a9e3e;
+}
+
+footer {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.developer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.developer span {
+  font-weight: 600;
+  color: #4caf50;
+}
